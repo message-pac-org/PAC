@@ -1,7 +1,7 @@
 # PAC
 PAC
 
-* ionic start PAC blank
-* ionic platform add android
-* ionic serve
-* ionic run android
+Instructions:
+1) ionic platform add android
+2) ionic serve
+3) ionic run android
