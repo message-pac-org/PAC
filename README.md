@@ -44,17 +44,20 @@ strict-ssl=false
 2. git config --global http.proxy http://yourusername:yourpassword@mycompanyproxyaddress.com:8080
 3. git config --global https.proxy http://yourusername:yourpassword@mycompanyproxyaddress.com:8080
 4. git config -–global http.sslVerify false
-4. npm config set registry http://registry.npmjs.org/
-5. npm config set proxy http://yourusername:yourpassword@mycompanyproxyaddress.com:8080
-6. npm config set https-proxy http://yourusername:yourpassword@mycompanyproxyaddress.com:8080
-7. npm config set strict-ssl false
-8. npm install -g cordova ionic
-9. ionic setup sass
+5. npm config set registry http://registry.npmjs.org/
+6. npm config set proxy http://yourusername:yourpassword@mycompanyproxyaddress.com:8080
+7. npm config set https-proxy http://yourusername:yourpassword@mycompanyproxyaddress.com:8080
+8. npm config set strict-ssl false
+9. npm install -g cordova ionic gulp
+10. `PROXY=http://yourusername:yourpassword@mycompanyproxyaddress.com:8080 ionic setup sass`
 
 ###Set up PAC project
+Note: you will need to append proxy to ionic commands that downloads stuff from the internet. eg.
+`PROXY=http://yourusername:yourpassword@mycompanyproxyaddress.com:8080 ionic start PAC tabs`
+
 1. Launch Git Bash icon for command prompt
 2. git clone https://github.com/message-pac-org/PAC.git
-3. ionic platform add android
+3. PROXY=http://yourusername:yourpassword@mycompanyproxyaddress.com:8080 ionic platform add android
 4. ionic serve
 5. Plug in your android phone into your PC
 6. ionic run android
