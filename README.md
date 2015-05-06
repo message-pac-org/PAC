@@ -27,6 +27,8 @@ PATH variable should also contain:
 1. Launch Git Bash icon for command prompt
 2. git config --global user.name "John Doe"
 3. git config --global user.email johndoe@example.com
+4. git config --list
+
 
 ###Get Atom editor to work on work-supplied-laptop behind corporate proxy/firewall
 1. Create a file called ~/.atom/.apmrc
