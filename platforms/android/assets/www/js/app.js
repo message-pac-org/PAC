@@ -35,6 +35,71 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: "templates/tabs.html"
   })
 
+  .state('tab.myPAC', {
+    url: '/myPAC',
+    views: {
+      'tab-myPAC': {
+        templateUrl: 'templates/tab-myPAC.html',
+      }
+    }
+  })
+
+  .state('tab.myPAC-myInformation', {
+    url: '/myPAC/myInformation',
+    views: {
+      'tab-myPAC': {
+        templateUrl: 'templates/myPAC/myInformation.html',
+      }
+    }
+  })
+
+  .state('tab.myPAC-myNotifications', {
+    url: '/myPAC/myNotifications',
+    views: {
+      'tab-myPAC': {
+        templateUrl: 'templates/myPAC/myNotifications.html',
+      }
+    }
+  })
+
+  .state('tab.myPAC-myAppointments', {
+    url: '/myPAC/myAppointments',
+    views: {
+      'tab-myPAC': {
+        templateUrl: 'templates/myPAC/myAppointments.html',
+      }
+    }
+  })
+
+  .state('tab.myPAC-submitMyDocuments', {
+    url: '/myPAC/submitMyDocuments',
+    views: {
+      'tab-myPAC': {
+        templateUrl: 'templates/myPAC/submitMyDocuments.html',
+      }
+    }
+  })
+
+  .state('tab.myPAC-contactUs', {
+    url: '/myPAC/contactUs',
+    views: {
+      'tab-myPAC': {
+        templateUrl: 'templates/myPAC/contactUs.html',
+      }
+    }
+  })
+
+
+  .state('tab.snap', {
+      url: '/snap',
+      views: {
+        'tab-snap': {
+          templateUrl: 'templates/tab-snap.html',
+        }
+      }
+    })
+
+
   // Each tab has its own nav history stack:
   .state('tab.about', {
     url: '/about',
@@ -91,70 +156,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-
-  .state('tab.snap', {
-      url: '/snap',
-      views: {
-        'tab-snap': {
-          templateUrl: 'templates/tab-snap.html',
-        }
-      }
-    })
-
-
-  .state('tab.myPAC', {
-    url: '/myPAC',
-    views: {
-      'tab-myPAC': {
-        templateUrl: 'templates/tab-myPAC.html',
-      }
-    }
-  })
-
-  .state('tab.myPAC-myInformation', {
-    url: '/myPAC/myInformation',
-    views: {
-      'tab-myPAC': {
-        templateUrl: 'templates/myPAC/myInformation.html',
-      }
-    }
-  })
-
-  .state('tab.myPAC-myNotifications', {
-    url: '/myPAC/myNotifications',
-    views: {
-      'tab-myPAC': {
-        templateUrl: 'templates/myPAC/myNotifications.html',
-      }
-    }
-  })
-
-  .state('tab.myPAC-myAppointments', {
-    url: '/myPAC/myAppointments',
-    views: {
-      'tab-myPAC': {
-        templateUrl: 'templates/myPAC/myAppointments.html',
-      }
-    }
-  })
-
-  .state('tab.myPAC-submitMyDocuments', {
-    url: '/myPAC/submitMyDocuments',
-    views: {
-      'tab-myPAC': {
-        templateUrl: 'templates/myPAC/submitMyDocuments.html',
-      }
-    }
-  })
-
-  .state('tab.myPAC-contactUs', {
-    url: '/myPAC/contactUs',
-    views: {
-      'tab-myPAC': {
-        templateUrl: 'templates/myPAC/contactUs.html',
-      }
-    }
-  })
 
   ;
 

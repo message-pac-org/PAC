@@ -1,18 +1,38 @@
 <ion-view view-title="My PAC">
     <ion-content>
           <ion-list>
-              <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap" href="#/tab/myPAC/myInformation"><h2>My Information</h2><i class="icon ion-chevron-right icon-accessory"></i></ion-item>
-              <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap" href="#/tab/myPAC/myNotifications"><h2>My Notifications</h2><i class="icon ion-chevron-right icon-accessory"></i></ion-item>
-              <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap" href="#/tab/myPAC/myAppointments"><h2>My Appointments</h2><i class="icon ion-chevron-right icon-accessory"></i></ion-item>
-              <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap" href="#/tab/myPAC/submitMyDocuments"><h2>Submit My Documents</h2><i class="icon ion-chevron-right icon-accessory"></i></ion-item>
-              <ion-item class="item-remove-animate item-icon-right" type="item-text-wrap" href="#/tab/myPAC/contactUs"><h2>Contact Us</h2><i class="icon ion-chevron-right icon-accessory"></i></ion-item>
+              <ion-item class="item-remove-animate item-icon-right" ui-sref="tab.myPAC-myInformation">
+                  <img src="img/myPAC/information/information.png" style="width:50px; height:50px; vertical-align:middle">
+                  My Information
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+              </ion-item>
+
+              <ion-item class="item-remove-animate item-icon-right" ui-sref="tab.myPAC-myNotifications">
+                  <img src="img/myPAC/notifications/notifications.jpg" style="width:52px; height:52px; vertical-align:middle">
+                  My Notifications
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+              </ion-item>
+
+              <ion-item class="item-remove-animate item-icon-right" ui-sref="tab.myPAC-myAppointments">
+                  <img src="img/myPAC/appointments/appointments.png" style="width:50px; height:50px; vertical-align:middle">
+                  My Appointments
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+              </ion-item>
+
+              <ion-item class="item-remove-animate item-icon-right" ui-sref="tab.myPAC-submitMyDocuments">
+                  <img src="img/myPAC/documents/documents.png" style="width:50px; height:50px; vertical-align:middle">
+                  Submit My Documents
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+              </ion-item>
+
+              <ion-item class="item-remove-animate item-icon-right" ui-sref="tab.myPAC-contactUs">
+                  <img src="img/myPAC/contactUs/contactUs.png" style="width:50px; height:50px; vertical-align:middle">
+                  Contact Us
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+              </ion-item>
           </ion-list>
     </ion-content>
-
 </ion-view>
-
-
-
 
 
 <script id="templates/myPAC/myInformation.html" type="text/ng-template">
