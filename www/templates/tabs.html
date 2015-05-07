@@ -14,29 +14,55 @@ Use tabs-energized to change tab color.
             <i class="icon ion-android-more-vertical"></i>
         </button>
         !-->
-        <button ui-sref="tab.popOver" class="button button-clear" ng-click="openPopover($event)">
+        <button class="button button-clear" ng-controller="PopOverCtrl" ng-click="openPopover($event)">
             <i class="icon ion-android-more-vertical"></i>
         </button>
     </ion-nav-buttons>
 </ion-nav-bar>
 
-<ion-tabs class="tabs-icon-only tabs-stripped tabs-background-positive tabs-color-assertive">
+<ion-tabs class="tabs-icon-only tabs-stripped tabs-background-positive tabs-color-energized">
 
   <!-- MyPAC Tab (formerly Accounts)-->
-  <ion-tab title="MyPAC" icon-on="ion-ios-person" icon-off="ion-ios-person" ui-sref="tab.myPAC">
+  <ion-tab title="MyPAC" icon="ion-person" ui-sref="tab.myPAC">
     <ion-nav-view name="tab-myPAC">
     </ion-nav-view>
   </ion-tab>
 
 
-  <ion-tab title="Snap" icon-on="ion-ios-camera" icon-off="ion-ios-camera" ui-sref="tab.snap">
+  <ion-tab title="Snap" icon="ion-android-camera" ui-sref="tab.snap">
       <ion-nav-view name="tab-snap"></ion-nav-view>
   </ion-tab>
 
 
-  <ion-tab title="About" icon-on="ion-ios-information" icon-off="ion-ios-information" ui-sref="tab.about">
+  <ion-tab title="About" icon="ion-information-circled" ui-sref="tab.about">
     <ion-nav-view name="tab-about"></ion-nav-view>
   </ion-tab>
 
 
 </ion-tabs>
+
+
+<script id="tab-popOver.html" type="text/ng-template">
+    <!--<style>.popover { height:40px; width: 150px; }</style>-->
+    <ion-popover-view>
+        <ion-content>
+            <div class="list">
+              <a class="item" href="#" target="_blank">
+                Tell a friend
+              </a>
+              <a class="item" href="#" target="_blank">
+                About
+              </a>
+              <a class="item" href="#" target="_blank">
+                Acknowledgements
+              </a>
+              <a class="item" href="#" target="_blank">
+                Disclaimer
+              </a>
+              <a class="item" href="#" target="_blank">
+                Version 0.0.1
+              </a>
+            </div>
+        </ion-content>
+    </ion-popover-view>
+</script>
