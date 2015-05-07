@@ -35,6 +35,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: "templates/tabs.html"
   })
 
+
+  .state('tab.popOver', {
+    url: '/popOver',
+    views: {
+      'PopOverView': {
+        templateUrl: 'templates/tab-popOver.html',
+        controller: 'PopOverCtrl'
+      }
+    }
+  })
+
   .state('tab.myPAC', {
     url: '/myPAC',
     views: {

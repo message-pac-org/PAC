@@ -9,27 +9,32 @@ Use tabs-energized to change tab color.
 <ion-nav-bar class="bar-positive">
     <ion-nav-back-button></ion-nav-back-button>
     <ion-nav-buttons side="right">
-        <button ui-sref="#" class="button button-clear" ng-click="softwareVersion()">
+        <!--
+        <button ui-sref="tab.popOver" class="button button-clear" ng-click="openPopover($event)">
+            <i class="icon ion-android-more-vertical"></i>
+        </button>
+        !-->
+        <button ui-sref="tab.popOver" class="button button-clear" ng-click="openPopover($event)">
             <i class="icon ion-android-more-vertical"></i>
         </button>
     </ion-nav-buttons>
 </ion-nav-bar>
 
-<ion-tabs class="tabs-icon-top tabs-energized">
+<ion-tabs class="tabs-icon-only tabs-stripped tabs-background-positive tabs-color-assertive">
 
   <!-- MyPAC Tab (formerly Accounts)-->
-  <ion-tab title="MyPAC" icon-on="ion-ios-person" icon-off="ion-ios-person-outline" ui-sref="tab.myPAC">
+  <ion-tab title="MyPAC" icon-on="ion-ios-person" icon-off="ion-ios-person" ui-sref="tab.myPAC">
     <ion-nav-view name="tab-myPAC">
     </ion-nav-view>
   </ion-tab>
 
 
-  <ion-tab title="Snap" icon-on="ion-ios-camera" icon-off="ion-ios-camera-outline" ui-sref="tab.snap">
+  <ion-tab title="Snap" icon-on="ion-ios-camera" icon-off="ion-ios-camera" ui-sref="tab.snap">
       <ion-nav-view name="tab-snap"></ion-nav-view>
   </ion-tab>
 
 
-  <ion-tab title="About" icon-on="ion-ios-information" icon-off="ion-ios-information-outline" ui-sref="tab.about">
+  <ion-tab title="About" icon-on="ion-ios-information" icon-off="ion-ios-information" ui-sref="tab.about">
     <ion-nav-view name="tab-about"></ion-nav-view>
   </ion-tab>
 
